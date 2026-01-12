@@ -1,0 +1,28 @@
+/*
+ * Colors.css
+ * Semantic color palette.
+ */
+:root {
+    /* Brand Colors */
+    --color-primary: #2563EB;       /* Blue 600 */
+    --color-primary-hover: #1D4ED8; /* Blue 700 */
+    --color-secondary: #475569;     /* Slate 600 */
+    
+    /* Backgrounds */
+    --color-bg-body: #F8FAFC;       /* Slate 50 */
+    --color-bg-surface: #FFFFFF;
+    --color-bg-sidebar: #1E293B;    /* Slate 800 */
+    
+    /* Text */
+    --color-text-main: #0F172A;     /* Slate 900 */
+    --color-text-muted: #64748B;    /* Slate 500 */
+    --color-text-inverse: #FFFFFF;
+    
+    /* Status */
+    --color-success: #10B981;
+    --color-warning: #F59E0B;
+    --color-danger: #EF4444;
+    
+    /* Borders */
+    --color-border: #E2E8F0;
+}

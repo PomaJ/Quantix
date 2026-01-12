@@ -1,0 +1,23 @@
+/* Main CSS Entry Point */
+@import '../constants/variables.css';
+@import './colors.css';
+@import './components/buttons.css';
+@import './components/containers.css';
+@import './components/navbar.css';
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-base);
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}

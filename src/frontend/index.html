@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantix Dashboard</title>
+    
+    <!-- CSS: Paths are now relative downwards from src/frontend -->
+    <link rel="stylesheet" href="./core/theme/main.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand" id="app-title">Quantix</div>
+            <nav>
+                <a href="#" class="nav-link active" id="nav-dashboard">Dashboard</a>
+                <a href="#" class="nav-link" id="nav-analytics">Analytics</a>
+                <a href="#" class="nav-link" id="nav-reports">Reports</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div>
+                    <h1 id="welcome-title">Welcome</h1>
+                    <p id="welcome-subtitle" style="color: var(--color-text-muted);">Overview</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <span id="status-indicator" style="font-size: 0.875rem;"></span>
+                    <button id="refresh-btn" class="btn btn-primary">Refresh</button>
+                    <div style="width: 40px; height: 40px; background: #ddd; border-radius: 50%;"></div> <!-- Avatar Placeholder -->
+                </div>
+            </header>
+
+            <div id="dashboard-content">
+                <!-- Stats Grid -->
+                <div class="grid-layout" id="stats-grid">
+                    <!-- Cards will be injected by JS -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS: Point to the logic in the app folder -->
+    <script type="module" src="./app/dashboard.js"></script>
+</body>
+</html>
